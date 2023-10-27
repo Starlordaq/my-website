@@ -1,0 +1,138 @@
+/* Reset default margin and padding for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color and text color */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Container for content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -50px;
+    position: relative;
+}
+
+/* Section titles */
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Contact info styles */
+.contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Professional Summary styles */
+.summary p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* Employment and Education styles */
+.employment p, .education p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Skills styles */
+.skills h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.skills ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.skills li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Contact details toggle button */
+button#toggleContact {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+button#toggleContact:hover {
+    background-color: #2980b9;
+}
+
+/* Image gallery styles */
+.image-gallery {
+    margin-top: 20px;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: calc(10% - 10px); /* Adjust the percentage as needed */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+}
+/* Image gallery styles */
+.image-gallery {
+    margin-top: 20px;
+}
+
+.scrollable-images {
+    max-height: 200px; /* Set the maximum height for the gallery */
+    overflow: auto; /* Add scrollbar when content overflows */
+}
+
+.scrollable-images img {
+    width: 100%; /* Images take full width of the container */
+    display: block; /* Ensure they stack on top of each other */
+    margin-bottom: 10px; /* Spacing between images */
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
