@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("toggleGallery");
     const galleryDetails = document.getElementById("galleryDetails");
-    let isGalleryVisible = false;
+    let isGalleryVisible = false; 
 
     toggleButton.addEventListener("click", function () {
         if (isGalleryVisible) {
@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         isGalleryVisible = !isGalleryVisible;
     });
 });
+
 let currentImage = 0;
 const gallery = document.querySelector('.gallery-images');
 
