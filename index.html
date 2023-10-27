@@ -12,7 +12,7 @@
     <div class="container">
         <div class="contact-info">
             <h2>Contact Information</h2>
-            <button id="toggleContact">Show</button>
+            <img src="pics.jpg" alt="Passport Photo">
             <div id="contactDetails">
                 <p>Address: No 31 Alara Street, Sabo Yaba, Lagos, 10001, NG</p>
                 <p>Email: ejezievictor7@gmail.com</p>
@@ -51,22 +51,24 @@
                 <li>Video editor</li>
             </ul>
         </div>
-        <div class="image-gallery">
+        <button id="toggleGallery">Show Image Gallery</button>
+        <div class="image-gallery" id="galleryDetails" style="display: none;">
             <h2>Image Gallery</h2>
-            <div class="gallery-images">
-                <img src="pics1.jpeg" alt="pics1">
-                <img src="pics2.jpeg" alt="pics2">
-                <img src="pics3.jpeg" alt="pics3">
-                <img src="pics4.jpg" alt="pics4">
-                <img src="pics5.jpeg" alt="pics5">
-                <img src="pics6.jpeg" alt="pics6">
-                <img src="pics6.jpeg" alt="pics7">
-
+            <div class="gallery-viewport">
+                <button id="scrollLeft" class="arrow-button left">&lt;</button>
+                <div class="gallery-images">
+                    <img src="pics1.jpeg" alt="pics1">
+                    <img src="pics2.jpeg" alt="pics2">
+                    <img src="pics3.jpeg" alt="pics3">
+                    <img src="pics4.jpg" alt="pics4">
+                    <img src="pics5.jpeg" alt="pics5">
+                    <img src="pics6.jpeg" alt="pics6">
+                    <img src="pics7.jpeg" alt="pics7">
+                </div>
+                <button id="scrollRight" class="arrow-button right">&gt;</button>
             </div>
         </div>
-        
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>

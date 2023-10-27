@@ -1,17 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // JavaScript for toggling contact details
-    const toggleButton = document.getElementById("toggleContact");
-    const contactDetails = document.getElementById("contactDetails");
-    let isContactVisible = false;
+    const toggleButton = document.getElementById("toggleGallery");
+    const galleryDetails = document.getElementById("galleryDetails");
+    let isGalleryVisible = false;
 
     toggleButton.addEventListener("click", function () {
-        if (isContactVisible) {
-            contactDetails.style.display = "none";
-            toggleButton.textContent = "Show";
+        if (isGalleryVisible) {
+            galleryDetails.style.display = "none";
+            toggleButton.textContent = "Show Image Gallery";
         } else {
-            contactDetails.style.display = "block";
-            toggleButton.textContent = "Hide";
+            galleryDetails.style.display = "block";
+            toggleButton.textContent = "Hide Image Gallery";
         }
-        isContactVisible = !isContactVisible;
+        isGalleryVisible = !isGalleryVisible;
     });
 });
+let currentImage = 0;
+const gallery = document.querySelector('.gallery-images');
+
