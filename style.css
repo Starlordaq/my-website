@@ -125,7 +125,7 @@ button#toggleGallery {
 
 .gallery-images img {
     height: 100%; 
-    width: auto; /* Maintain aspect ratio */
+    width: auto; 
     margin-right: 10px;
     border: 2px solid #3498db;
     border-radius: 5px;
@@ -137,7 +137,6 @@ button#toggleGallery {
 .gallery-images img:hover {
     transform: scale(1.05);
 }
-/* Add these styles to your existing CSS */
 
 .gallery-viewport {
     position: relative;
